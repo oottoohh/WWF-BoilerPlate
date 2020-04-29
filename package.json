@@ -1,0 +1,31 @@
+{
+  "name": "noframeworkweb-boilerplate",
+  "version": "1.0.0",
+  "description": "boilerplate without framework",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rimraf ./development && mkdirp ./development && rimraf ./.cache && parcel public/index.html --out-dir development -p 3000",
+    "build": "parcel build public/index.html --out-dir dist --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "NoFrameWork-Boilerplate"
+  },
+  "keywords": [
+    "NoFrameWork-Boilerplate"
+  ],
+  "author": "Ottoh Hidayatullah",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/runtime-corejs2": "^7.9.2",
+    "mkdirp": "^1.0.4",
+    "parcel-bundler": "^1.12.4",
+    "rimraf": "^3.0.2",
+    "sass": "^1.26.5"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
